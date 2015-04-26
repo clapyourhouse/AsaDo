@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+#import "ADTopViewController.h"
+@class ViewController;
+@interface AppDelegate : UIResponder <UIApplicationDelegate>{
+    ADTopViewController *topViewController;
+}
 
 @property (strong, nonatomic) UIWindow *window;
 

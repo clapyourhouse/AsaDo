@@ -17,6 +17,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    ADTopViewController* topMenu = [[ADTopViewController alloc] init];
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:topMenu];
+    
+    // テーブルビューコントローラのビューをウィンドウに貼付ける
+    [self.window addSubview:topViewController.view];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

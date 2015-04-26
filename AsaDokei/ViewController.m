@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "ADSettingTableViewController.h"
 
 @interface ViewController ()
 
@@ -16,6 +17,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    // 生成
+//    ViewController *viewcon = [[ViewController alloc]init];
+//    UINavigationController *nav =
+//    [[UINavigationController alloc] initWithRootViewController:viewcon];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -24,4 +29,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)settingBtn:(id)sender {
+    ADSettingTableViewController *adsettingView = [[ADSettingTableViewController alloc]init];
+    [self.navigationController pushViewController:adsettingView animated:YES];
+
+}
 @end

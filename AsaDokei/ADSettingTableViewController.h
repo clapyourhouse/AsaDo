@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ADSettingTableViewController.h
 //  AsaDokei
 //
 //  Created by 北村 彰悟 on 2015/04/26.
@@ -8,9 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
-- (IBAction)settingBtn:(id)sender;
+@interface ADSettingTableViewController : UITableViewController
 
 @end
-

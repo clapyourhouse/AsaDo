@@ -14,6 +14,11 @@
 		EB0AE2451AED116F009A88A0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB0AE2441AED116F009A88A0 /* Images.xcassets */; };
 		EB0AE2481AED116F009A88A0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB0AE2461AED116F009A88A0 /* LaunchScreen.xib */; };
 		EB0AE2541AED116F009A88A0 /* AsaDokeiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0AE2531AED116F009A88A0 /* AsaDokeiTests.m */; };
+		EB0AE2601AED120A009A88A0 /* ADSettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0AE25E1AED120A009A88A0 /* ADSettingTableViewController.m */; };
+		EB0AE2611AED120A009A88A0 /* ADSettingTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB0AE25F1AED120A009A88A0 /* ADSettingTableViewController.xib */; };
+		EB0AE2631AED1316009A88A0 /* 22338.png in Resources */ = {isa = PBXBuildFile; fileRef = EB0AE2621AED1316009A88A0 /* 22338.png */; };
+		EB0AE2671AED184B009A88A0 /* ADTopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0AE2651AED184B009A88A0 /* ADTopViewController.m */; };
+		EB0AE2681AED184B009A88A0 /* ADTopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB0AE2661AED184B009A88A0 /* ADTopViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,13 @@
 		EB0AE24D1AED116F009A88A0 /* AsaDokeiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AsaDokeiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB0AE2521AED116F009A88A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB0AE2531AED116F009A88A0 /* AsaDokeiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AsaDokeiTests.m; sourceTree = "<group>"; };
+		EB0AE25D1AED120A009A88A0 /* ADSettingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADSettingTableViewController.h; sourceTree = "<group>"; };
+		EB0AE25E1AED120A009A88A0 /* ADSettingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADSettingTableViewController.m; sourceTree = "<group>"; };
+		EB0AE25F1AED120A009A88A0 /* ADSettingTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ADSettingTableViewController.xib; sourceTree = "<group>"; };
+		EB0AE2621AED1316009A88A0 /* 22338.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 22338.png; sourceTree = "<group>"; };
+		EB0AE2641AED184B009A88A0 /* ADTopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADTopViewController.h; sourceTree = "<group>"; };
+		EB0AE2651AED184B009A88A0 /* ADTopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADTopViewController.m; sourceTree = "<group>"; };
+		EB0AE2661AED184B009A88A0 /* ADTopViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ADTopViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +95,14 @@
 			children = (
 				EB0AE23B1AED116F009A88A0 /* AppDelegate.h */,
 				EB0AE23C1AED116F009A88A0 /* AppDelegate.m */,
+				EB0AE2641AED184B009A88A0 /* ADTopViewController.h */,
+				EB0AE2651AED184B009A88A0 /* ADTopViewController.m */,
+				EB0AE2661AED184B009A88A0 /* ADTopViewController.xib */,
 				EB0AE23E1AED116F009A88A0 /* ViewController.h */,
 				EB0AE23F1AED116F009A88A0 /* ViewController.m */,
+				EB0AE25D1AED120A009A88A0 /* ADSettingTableViewController.h */,
+				EB0AE25E1AED120A009A88A0 /* ADSettingTableViewController.m */,
+				EB0AE25F1AED120A009A88A0 /* ADSettingTableViewController.xib */,
 				EB0AE2411AED116F009A88A0 /* Main.storyboard */,
 				EB0AE2441AED116F009A88A0 /* Images.xcassets */,
 				EB0AE2461AED116F009A88A0 /* LaunchScreen.xib */,
@@ -96,6 +114,7 @@
 		EB0AE2371AED116F009A88A0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EB0AE2621AED1316009A88A0 /* 22338.png */,
 				EB0AE2381AED116F009A88A0 /* Info.plist */,
 				EB0AE2391AED116F009A88A0 /* main.m */,
 			);
@@ -200,7 +219,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB0AE2431AED116F009A88A0 /* Main.storyboard in Resources */,
+				EB0AE2681AED184B009A88A0 /* ADTopViewController.xib in Resources */,
+				EB0AE2631AED1316009A88A0 /* 22338.png in Resources */,
 				EB0AE2481AED116F009A88A0 /* LaunchScreen.xib in Resources */,
+				EB0AE2611AED120A009A88A0 /* ADSettingTableViewController.xib in Resources */,
 				EB0AE2451AED116F009A88A0 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,6 +244,8 @@
 				EB0AE2401AED116F009A88A0 /* ViewController.m in Sources */,
 				EB0AE23D1AED116F009A88A0 /* AppDelegate.m in Sources */,
 				EB0AE23A1AED116F009A88A0 /* main.m in Sources */,
+				EB0AE2671AED184B009A88A0 /* ADTopViewController.m in Sources */,
+				EB0AE2601AED120A009A88A0 /* ADSettingTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
