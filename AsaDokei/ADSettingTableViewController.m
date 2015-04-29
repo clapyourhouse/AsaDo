@@ -35,24 +35,38 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 #warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return 4;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    NSString *cellIdentifier = @"Cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     
-    // Configure the cell...
+    // セルが作成されていないか?
+    if (!cell) { // yes
+        // セルを作成
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+    }
     
+    // セルにテキストを設定
+    // セルの内容はNSArray型の「items」にセットされているものとする
+//    cell.textLabel.text = [items objectAtIndex:indexPath.row];
+    if (indexPath.row == 0) {
+        cell.textLabel.text = @"音量";
+    }else if (indexPath.row == 1){
+        cell.textLabel.text = @"アラーム鳴動時間";
+    }else if (indexPath.row == 2){
+        cell.textLabel.text = @"アラーム通知";
+    }
     return cell;
 }
-*/
 
 /*
 // Override to support conditional editing of the table view.

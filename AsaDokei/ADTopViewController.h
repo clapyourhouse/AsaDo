@@ -7,8 +7,23 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ADSettingTableViewController.h"
+#import <MediaPlayer/MediaPlayer.h>
+#import <AudioToolbox/AudioToolbox.h>
 
-@interface ADTopViewController : UIViewController
+
+@interface ADTopViewController : UIViewController<MPMediaPickerControllerDelegate>{
+    NSDateFormatter *fotmat;
+
+}
 - (IBAction)settingBtn:(id)sender;
+- (IBAction)musicBtn:(id)sender;
+- (IBAction)vibeBtn:(id)sender;
+- (IBAction)alermBtn:(id)sender;
+
+@property (strong, nonatomic) IBOutlet UILabel *timeLabl;
+@property (strong, nonatomic) IBOutlet UILabel *dayLabl;
+@property (strong, nonatomic) IBOutlet UILabel *weekLabl;
+@property (strong, nonatomic) IBOutlet UIView *volumeView;
 
 @end
